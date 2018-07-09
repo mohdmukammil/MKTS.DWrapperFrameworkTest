@@ -1,0 +1,12 @@
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\TestDWrapperFramework.exe.config
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\TestDWrapperFramework.exe
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\TestDWrapperFramework.pdb
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\obj\Debug\TestDWrapperFrameworkFM.csprojResolveAssemblyReference.cache
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\obj\Debug\TestDWrapperFrameworkFM.csproj.CoreCompileInputs.cache
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\obj\Debug\TestDWrapperFramework.exe
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\obj\Debug\TestDWrapperFramework.pdb
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\DWrapperFramework.dll
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\DWrapperFramework.DWrapper.dll
+C:\Users\Sabre_002\source\repos\TestWrapper\TestDWrapperFramework\bin\Debug\DWrapperFramework.pdb
