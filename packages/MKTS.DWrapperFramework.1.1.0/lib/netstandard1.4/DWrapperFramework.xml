@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DWrapperFramework</name>
+    </assembly>
+    <members>
+        <member name="M:DWrapper.DWrapper.Execute``1(System.Data.CommandType,System.String,System.Object)">
+            <summary>
+            To Execute SQL command over the database directly.
+            </summary>
+            <param name="commandType">StoredProcedure/ Text </param>
+            <param name="sql">Stored procedure name or sql query</param>
+            <param name="parameters">query parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:DWrapper.DWrapper.Select``1(System.Object)">
+            <summary>
+            Get Specific DataObject
+            </summary>
+            <typeparam name="T">EntityName</typeparam>
+            <param name="criteria">Entity Object Containing Id Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:DWrapper.DWrapper.SelectSingle``1(System.Object)">
+            <summary>
+            Get Specific DataObject
+            </summary>
+            <typeparam name="T">EntityName</typeparam>
+            <param name="criteria">Any entity property eg( new { ColumnName="Value"})</param>
+            <returns></returns>
+        </member>
+        <member name="M:DWrapper.DWrapper.SelectAll``1">
+            <summary>
+            Get all the records for specific entity
+            </summary>
+            <typeparam name="T">EntityName</typeparam>
+            <returns>EntityList</returns>
+        </member>
+        <member name="M:DWrapper.DWrapper.Insert``1(``0)">
+            <summary>
+            Insert the record for specific entity
+            </summary>
+            <typeparam name="T">EntityName</typeparam>
+            <param name="obj">Entity Object</param>
+        </member>
+        <member name="M:DWrapper.DWrapper.InsertConnectionLess``1(``0)">
+            <summary>
+            To insert (To use this method you need to open the connection)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+        </member>
+        <member name="M:DWrapper.DWrapper.InsertList``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Insert List of records for specific entity
+            </summary>
+            <typeparam name="T">EntityName</typeparam>
+            <param name="objList">List of Entity Object</param>
+        </member>
+        <member name="M:DWrapper.DWrapper.InsertListConnectionLess``1(System.Collections.Generic.List{``0})">
+            <summary>
+            To insert List of Object(To use this method you need to open the connection)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objList"></param>
+        </member>
+        <member name="M:DWrapper.DWrapper.Update``1(``0)">
+            <summary>
+            Update the record for specifc entity
+            </summary>
+            <typeparam name="T">Entity</typeparam>
+            <param name="obj">Entity object with updated value</param>
+        </member>
+        <member name="M:DWrapper.DWrapper.UpdateSelectedColumns``1(System.Object)">
+            <summary>
+            Update selected columns in the record for specifc entity 
+            Note: Id is mandetory 
+            </summary>
+            <typeparam name="T">Entity</typeparam>
+            <param name="obj">Entity object with updated value</param>
+        </member>
+        <member name="M:DWrapper.DWrapper.UpdateConnectionLess``1(``0)">
+            <summary>
+            To Update (To Use this method you need to open the connection)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+        </member>
+        <member name="M:DWrapper.DWrapper.DeleteConnectionLess``1(``0)">
+            <summary>
+            To Delete (To Use this method you need to open the connection)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+        </member>
+        <member name="M:DWrapper.DWrapper.DapperMapSP``1(System.String,System.Object[])">
+            <summary>
+            To Call Stored Procedure 
+            </summary>
+            <typeparam name="T">Type Paramenter</typeparam>
+            <param name="spName">Stored Procedure Name</param>
+            <param name="dynamicArguments">Arguments (Possible Values :- Expado Object , Dynamic Object, Anonymous Object) </param>
+            <returns></returns>
+        </member>
+        <member name="M:DWrapper.DWrapper.DapperMapSPConnectionLess``1(System.String,System.Object[])">
+            <summary>
+            To Call Stored Procedure (To Use this Method you need to Open the connection)
+            </summary>
+            <typeparam name="T">Type Paramenter</typeparam>
+            <param name="spName">Stored Procedure Name</param>
+            <param name="dynamicArguments">Arguments (Possible Values :- Expado Object , Dynamic Object, Anonymous Object) </param>
+            <returns></returns>
+        </member>
+        <member name="M:DWrapper.DWrapper.BeginTransaction">
+            <summary>
+            To Begin SQL Transaction Scope
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DWrapper.DWrapper.GetOpenConnection">
+            <summary>
+            To Open SQL Connection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DWrapper.DWrapperKey">
+            <summary>
+            Attribute to filter out Id property.
+            </summary>
+        </member>
+        <member name="T:DWrapper.DWrapperIgnore">
+            <summary>
+            Atribute to Ignore particular element.
+            </summary>
+        </member>
+        <member name="T:DWrapper.DWrapperBase">
+            <summary>
+            Used to Performs Databse Queries over the database using Dapper Library.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DWrapper.DWrapperBase.Select``1(System.Object)" -->
+        <!-- Badly formed XML comment ignored for member "M:DWrapper.DWrapperBase.DapperMapSP``1(System.String,System.Object[])" -->
+        <member name="M:DWrapper.DWrapperBase.ParseProperties``1(``0)">
+            <summary>
+            Retrieves a Dictionary with name and value 
+            for all object properties matching the given criteria.
+            </summary>
+        </member>
+        <member name="M:DWrapper.DWrapperBase.GetSqlPairs(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>
+            Create a commaseparated list of value pairs on 
+            the form: "key1=@value1, key2=@value2, ..."
+            </summary>
+        </member>
+        <member name="T:DWrapper.DWrapperHelper">
+            <summary>
+            This class extends DapperHelperBase class and provide generic methods to perform DB operations.
+            </summary>
+        </member>
+    </members>
+</doc>

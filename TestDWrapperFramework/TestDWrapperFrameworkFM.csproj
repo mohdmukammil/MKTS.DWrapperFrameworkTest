@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DWrapperFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MKTS.DWrapperFramework.1.1.0\lib\net45\DWrapperFramework.dll</HintPath>
+    </Reference>
     <Reference Include="DWrapperFramework.DWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MKTS.DWrapperFramework.1.0.0\lib\net46\DWrapperFramework.DWrapper.dll</HintPath>
     </Reference>
